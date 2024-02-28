@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--FONT-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!---header section-->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packeges">packages</a>
+            <a href="#servies">services</a>
+            <a href="#galery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user"    id="login-btn"></i>
+            
+        </div>
+        
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+    <!---end header section-->
+
+    <div class="login-form-container">
+        <i class="fas fa-multiply" id="form-close"></i>
+      <form action=""> 
+           <h3>Login</h3>
+           <input type="email" class="box"  placeholder="enter your email">
+           <input type="password" class="box"  placeholder="enter your password">
+           <input type="submit" value="login-now" class="btn">
+           <input type="checkbox" id="remember">
+           <label for="remember">rememeber me</label>
+           <p>forget password?<a href="#">click herre</a></p>
+           <p>don't have an account <a href="#">register now</a></p>
+      </form>
+    </div>
+
+    <!-- home sectiom  -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>advanture is worthwhile</h3>
+            <p>dicover new place with us, adventure awaits</p>
+            <a href="#" class="btn">discover more</a>
+        </div>
+        <div class="control">
+            <span class="vid-btn active" data-src="image/f1.mp4"></span>
+            <span class="vid-btn" data-src="image/f2.mp4"></span>
+            <span class="vid-btn" data-src="image/f3.mp4"></span>
+            <span class="vid-btn" data-src="image/f4.mp4"></span>
+            <span class="vid-btn" data-src="image/f5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="image/f1.mp4" id="video-slider" loop autoplay muted></video>
+
+        </div>
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+
+        </h1>
+
+        <div class="row">
+            <div class ="image">
+                <img src="booking.jpg">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <h3>Where to </h3>
+                    <input type="text" placeholder="Place Name">
+                </div>
+                <div class="inputbox">
+                    <h3>How many </h3>
+                    <input type="number" placeholder="Number of Guests">
+                </div>
+                <div class="inputbox">
+                    <h3>Arrival </h3>
+                    <input type="date">
+                </div>
+                <div class="inputbox">
+                    <h3>Leving </h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="fbtn" value="Book now">
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <!--book section ends-->
+
+    <!--package setion starts-->
+    <section class="package" id="package">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+        </h1>    
+
+        <div class="box-container">
+            <div class="box">
+                <img src="G1.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>Mumbai</h3>
+                    <p>Mumbai, India's bustling metropolis, captivates with its iconic landmarks like the Gateway of India and vibrant street food scene.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+
+        
+            <div class="box">
+                <img src="G2.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>Goa</h3>
+                    <p>Goa, India's coastal paradise, is renowned for its sun-kissed beaches, vibrant nightlife, and Portuguese-influenced architecture.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="G3.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>tamil nadu</h3>
+                    <p>Tamil Nadu, located in southern India, boasts a rich tapestry of culture, history, and natural beauty.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+        
+
+     
+            <div class="box">
+                <img src="G4.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>Gujarat</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis amet assumenda digni</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+    
+    
+            <div class="box">
+                <img src="G5.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>kashmir</h3>
+                    <p>Gujarat, on India's western coast, is a vibrant state known for its rich cultural heritage and diverse landscapes.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+      
+     
+            <div class="box">
+                <img src="G6.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>Manali</h3>
+                    <p>Nestled in the breathtaking landscapes of the Indian state of Himachal Pradesh, Manali is a charming hill station surrounded by snow-capped mountains and lush greenery. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+        
+
+            <div class="box">
+                <img src="G7.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>punjab</h3>
+                    <p>Punjab, known as the "Land of Five Rivers," is a culturally rich state in northern India. Famed for its vibrant Bhangra music and dance, the state exudes a lively spirit. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+        
+
+        
+            <div class="box">
+                <img src="G8.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>Andhra pradesh</h3>
+                    <p>Andhra Pradesh, located on the southeastern coast of India, is a state known for its diverse landscapes, rich history, and cultural heritage.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+            
+            <div class="box">
+                <img src="G9.jpg" alt="" width="374px" height="300px">
+                <div class="contant">
+                    <h3><i class="fas fa-map-marker-alt"></i>kerala</h3>
+                    <p>Kerala, on the southwestern coast of India, is a tropical paradise renowned for its lush landscapes, backwaters, and pristine beaches.</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">20,000-<span>50,000</span></div>
+                    <a href="#" class="btn">Book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1> 
+        <div class="box-container">
+           <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Affordable hotel</h3>
+            <p>Explore with confidence using our safety guide. From travel tips to emergency protocols, we prioritize your well-being, ensuring a secure and enjoyable journey.</p>
+           </div> 
+           <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>food and drinks</h3>
+            <p>Savor culinary delights and quench your thirst with our diverse selection of food and drinks. From gourmet dishes to refreshing beverages, embark on a flavorful journey with our curated menu.</p>
+           </div> 
+           <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>safty guide</h3>
+            <p>Discover comfort without breaking the bank. Our affordable hotels offer a budget-friendly stay without compromising on quality, ensuring a pleasant and economical accommodation experience</p>
+           </div> 
+           <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Embark on a global adventure with our 'Around the World' experience. Explore diverse cultures, breathtaking landscapes, and iconic landmarks, making memories that span continents</p>
+           </div> 
+           <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>fastest travel</h3>
+            <p>Experience the thrill of high-speed travel with our fastest transportation options. Reach your destination swiftly and efficiently, ensuring you make the most of your valuable time on the go.</p>
+           </div> 
+           <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>advanture</h3>
+            <p>Unleash your adventurous spirit with our adrenaline-pumping experiences. From heart-racing activities to off-the-beaten-path journeys, dive into the thrill of adventure with unforgettable escapades.</p>
+           </div> 
+        </div>
+    </section>
+    <!--servies section ends-->
+
+    <!--gallery section starts-->
+    <section class="gallery" id="gallery">
+            <h1 class="heading">
+                <span>g</span>
+                <span>a</span>
+                <span>l</span>
+                <span>l</span>
+                <span>e</span>
+                <span>r</span>
+                <span>y</span>             
+            </h1> 
+            <div class="box-container">
+
+                <div class="box">
+                    <img src="G1.jpg" alt="" >
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G2.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G3.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G4.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G5.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G6.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G7.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G8.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="G9.jpg" alt="" width="250px" height="250px">
+                    <div class="content">
+                        <h3>amazing places</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi non natus voluptate quisquam laboriosam eaque modi deserunt voluptatum amet voluptates.</p>
+                        <a href="" class="btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--gallery section ends-->
+
+         <!--gallery section starts-->
+         <section class="review" id="review">
+            <h1 class="heading">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>           
+            </h1> 
+
+            <div class="swiper review-slider">
+
+                <div class="swiper-wrapper">
+    
+                    <div class="swiper-slide box">
+                           <img src="S1.png" alt="" width="250px" height="250px">
+                            <h3>Jennifer</h3>
+                        <p>This website is a travel gem! The range of destinations and packages is impressive. Booking was seamless, and the travel tips added a thoughtful touch. Can't wait for my next adventure!</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                    </div>
+                    <div class="swiper-slide box">
+                        <img src="S2.jpg" alt="" width="250px" height="250px">
+                         <h3>Sam</h3>
+                     <p>Found the perfect hotel through this site at an unbeatable price. The user-friendly interface made the booking process a breeze. A go-to for budget-conscious travelers!</p>
+                         <div class="stars">
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="fas fa-star"></i>
+                             <i class="far fa-star"></i>
+                         </div>
+                 </div>
+                 <div class="swiper-slide box">
+                    <img src="S3.jpg" alt="" width="250px" height="250px">
+                     <h3>Priya</h3>
+                 <p>Appreciate the safety guide—clear and reassuring. The emphasis on well-being sets this site apart. Highly recommended for travelers who prioritize safety.</p>
+                     <div class="stars">
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="fas fa-star"></i>
+                         <i class="far fa-star"></i>
+                     </div>
+             </div>
+             <div class="swiper-slide box">
+                <img src="S4.jpg" alt="" width="250px" height="250px">
+                 <h3>Priya</h3>
+             <p>The 'Around the World' feature is a game-changer. Seamless navigation and a wealth of information make planning an international trip effortless. Kudos to the team!</p>
+                 <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="far fa-star"></i>
+                 </div>
+         </div>
+        </section >
+         
+        <!--contact section starts-->
+        <section class="contact">
+            <h1 class="heading">
+                <span>c</span>
+                <span>o</span>
+                <span>n</span>
+                <span>t</span>
+                <span>a</span>
+                <span>t</span>           
+            </h1> 
+
+            <div class="row">
+
+                <div class="image">
+                    <img src="ss.jpg" alt="" width="350px" height="350px">
+                </div>
+
+                <form action="">
+                    <div class="inputbox">
+                        <input type="text" placeholder="name">
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="inputbox">
+                        <input type="number" placeholder="number">
+                        <input type="text"   placeholder="subject">
+                    </div>
+                    <textarea placeholder="message" name="" id="" cols="30" rows=""></textarea>
+                    <input type="submit" class="btn" value="send message">
+                </form>
+            </div>
+        </section>  
+        
+        <!--brand section-->
+        
+        <section class="brand-container">
+            <div class="swiper brand-slider">
+                <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="lo1.jpg" alt="" height="100px" width="100px"></div>
+                      <div class="swiper-slide"><img src="lo2.jpg"  height="100px" width="100px"></div>
+                      <div class="swiper-slide"><img src="lo3.jpg"  height="100px" width="100px"></div>
+                      <div class="swiper-slide"><img src="lo4.jpg"  height="100px" width="100px"></div>
+                      <div class="swiper-slide"><img src="lo5.jpg"  height="100px" width="100px"></div>
+                      <div class="swiper-slide"><img src="lo6.jpg" height="100px" width="100px"></div>
+                </div>
+            </div> 
+        </section> 
+    
+            
+        <!--footer section-->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                   <h3>About Us</h3>
+                   <p>Explore our diverse range of destinations, discover hidden gems, and embark on journeys that transcend borders. We are here to inspire and assist you in crafting the perfect travel story.
+
+                    Join us on this exciting adventure as we redefine the way you experience the world. Your journey begins here. Bon voyage!</p>
+                </div>
+                <div class="box">
+                    <h3>Branch location</h3>
+                    <a href="#">maharashtra</a>
+                    <a href="#">gujarat</a>
+                    <a href="#">uttar pradesh</a>
+                    <a href="#">uttarakhand</a>
+                    <a href="#">assam</a>
+                    <a href="#">telangana</a>
+                    <a href="#">tamil nadu</a>
+                </div>
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#">home</a>
+                    <a href="#">book</a>
+                    <a href="#">packages</a>
+                    <a href="#">services</a>
+                    <a href="#">gallery</a>
+                    <a href="#">review</a>
+                    <a href="#">contact</a>
+                </div>
+                <div class="box">
+                   <h3>follow us</h3>
+                   <a href="#">facebook</a>
+                   <a href="#">instagram</a>
+                   <a href="#">twitter</a>
+                   <a href="#">linkedin</a>
+                </div>
+            </div>
+            <h1 class="credit">created by<span> Suraj </span> | all rights reserved!</h1>           
+        </section>
+
+    <!--JAVASRIPT-->
+    
+    <script src="script.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
+    <script>
+        var swiper = new Swiper(".review-slider", {
+    spaceBetween:20,
+    loop:true,
+    autoplay:{
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints :{
+        450:{
+            slidesPreView: 1,
+        },
+        800:{
+            slidesPreView: 2,
+        },
+        1200:{
+            slidesPreView :3,
+        }
+    }
+});
+    </script>
+</body>
+</html>
